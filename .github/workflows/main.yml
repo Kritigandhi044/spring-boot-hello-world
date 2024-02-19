@@ -42,7 +42,8 @@ jobs:
           aws configure set default.region us-east-1
       - name: Update ECS Service
         run: |
-          aws ecs register-task-definition --cli-input-json file://spring-boot-hello-world/.github/workflows/ecs-task-definition.json
+          aws ecs register-task-definition --cli-input-json file://ecs-task-definition.json
+          
           aws ecs update-service \
             --cluster springbootappcluster\
             --service springbootservice\
