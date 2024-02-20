@@ -44,7 +44,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.18</version>
                 <configuration>
-                   <mainClass>HelloWorldApplication.class</mainClass> 
+                   <mainClass>HelloWorldApplication</mainClass> 
                 </configuration>
             </plugin>
         </plugins>
